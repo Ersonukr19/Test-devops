@@ -9,7 +9,7 @@ echo "deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc]" \
 sudo apt update ; sudo apt upgrade -y
 sudo apt-get install jenkins -y
 sudo apt update ; sudo apt upgrade -y
-sudo apt install fontconfig openjdk-17-jre
+sudo apt install openjdk-17-jdk
 echo "java --version"
 sudo systemctl enable jenkins --now
 echo "sudo systemctl status jenkins"
