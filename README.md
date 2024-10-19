@@ -37,8 +37,8 @@ Terraform --version
 Terrafrom init
 terraform apply 
 # so it will create infra and install jenkins also on the server.
-cd ..
-cat /var/jenkins_home/secrets/initialAdminPassword
+# cd ..
+# cat /var/jenkins_home/secrets/initialAdminPassword
 
 ## check with ip:8080
 # paste the passwoprd
