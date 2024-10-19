@@ -36,17 +36,17 @@ cd terraform
 Terraform --version
 Terrafrom init
 terraform apply 
-# so it will create infra and install jenkins also on the server.
-# cd ..
-# cat /var/jenkins_home/secrets/initialAdminPassword
+## so it will create infra and install jenkins also on the server.
+## cd ..
+## cat /var/jenkins_home/secrets/initialAdminPassword
 
 ## check with ip:8080
-# paste the passwoprd
-# select pipeline
-# cd /jenkins
-# copy jenkins pipeline and paste to pipeline job.
-# then click on build 
-# after biuld that artifact move to /var/www/html as configure and using ip we can access the webpage.
+## paste the passwoprd
+## select pipeline
+## cd /jenkins
+## copy jenkins pipeline and paste to pipeline job.
+## then click on build 
+## after biuld that artifact move to /var/www/html as configure and using ip we can access the webpage.
 
 
 
