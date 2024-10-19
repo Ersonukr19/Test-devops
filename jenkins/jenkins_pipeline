@@ -1,0 +1,43 @@
+https://github.com/Ersonukr19/dotnet3.1.gitpipeline {
+    agent any 
+
+    environment {
+        DOTNET_ROOT = "/root/.dotnet"
+        PATH = "$DOTNET_ROOT:$PATH"
+    }
+
+    stages {
+        stage('Checkout') {
+            steps {
+                git 'https://github.com/Ersonukr19/dotnet3.1.git'
+            }
+        }
+
+        stage('Build') {
+            steps {
+                sh 'dotnet build'
+            }
+        }
+
+        stage('Publish') {
+            steps {
+                sh 'dotnet publish -c Release -o /var/www/html'
+            }
+        }
+
+        stage('Restart Nginx') {
+            steps {
+                sh 'systemctl restart nginx'
+            }
+        }
+    }
+
+    post {
+        success {
+            echo 'Pipeline succeeded!'
+        }
+        failure {
+            echo 'Pipeline failed!'
+        }
+    }
+}
