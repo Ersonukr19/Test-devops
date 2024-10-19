@@ -28,10 +28,27 @@ To run this project, you will need:
 - **Terraform:** [Install Terraform](https://www.terraform.io/downloads.html)
 - **Access to Google Cloud/AWS/Azure:** Ensure you have an account to provision resources.
 
-### Cloning the Repository
+### using terraform create infrastracture.
+cd terraform
+# install terraform in server
+./terrraform.sh
+# After install
+Terraform --version
+Terrafrom init
+terraform apply 
+# so it will create infra and install jenkins also on the server.
+cd ..
+cat /var/jenkins_home/secrets/initialAdminPassword
 
-Clone this repository to your local machine using the following command:
+##check with ip:8080
+#paste the passwoprd
+##select pipeline
+cd /jenkins
+copy jenkins pipeline and paste to pipeline job.
+#then click on build 
+#after biuld that artifact move to /var/www/html as configure and using ip we can access the webpage.
 
-```bash
-git clone https://github.com/yourusername/devops.git
-cd Test-devops
+
+
+
+
