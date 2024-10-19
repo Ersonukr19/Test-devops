@@ -40,13 +40,13 @@ terraform apply
 cd ..
 cat /var/jenkins_home/secrets/initialAdminPassword
 
-##check with ip:8080
-#paste the passwoprd
-##select pipeline
-cd /jenkins
-copy jenkins pipeline and paste to pipeline job.
-#then click on build 
-#after biuld that artifact move to /var/www/html as configure and using ip we can access the webpage.
+## check with ip:8080
+# paste the passwoprd
+# select pipeline
+# cd /jenkins
+# copy jenkins pipeline and paste to pipeline job.
+# then click on build 
+# after biuld that artifact move to /var/www/html as configure and using ip we can access the webpage.
 
 
 
